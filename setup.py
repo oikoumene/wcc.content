@@ -39,6 +39,8 @@ setup(name='wcc.content',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.dexterity',
+          'z3c.jbot'
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing']},

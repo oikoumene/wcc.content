@@ -1,0 +1,4 @@
+<layers>
+    <layer name="wcc.content"
+           interface="wcc.content.interfaces.IProductSpecific" />
+</layers>
