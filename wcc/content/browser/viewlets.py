@@ -18,5 +18,8 @@ class LogoViewlet(BaseLogoViewlet):
                     ).tag(title=logoTitle, alt=logoTitle)
 
         navroot = self.portal_state.navigation_root()
-        self.navigation_root_description = navroot.getField(
+        if hasattr(navroot, 'getField'):
+            self.navigation_root_description = navroot.getField(
                 'description').get(navroot)
+        else:
+            self.navigation_root_description = u''
