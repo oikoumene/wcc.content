@@ -20,9 +20,9 @@
        in Plone -->
   <genericsetup:registerProfile
       name="default"
-      title=""
+      title="wcc.content"
       directory="profiles/default"
-      description="Extension profile for "
+      description="Extension profile for wcc.content"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
