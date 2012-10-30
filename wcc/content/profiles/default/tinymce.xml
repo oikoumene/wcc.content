@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object>
+ <resourcetypes>
+  <linkable purge="False">
+    <element value="TranslatableImage"/>
+    <element value="TranslatableFile"/>
+  </linkable>
+  <imageobjects purge="False">
+    <element value="TranslatableImage"/>
+  </imageobjects>
+ </resourcetypes>
+</object>
