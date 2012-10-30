@@ -9,6 +9,7 @@
 
   <!-- Include configuration for dependencies listed in setup.py -->
   <includeDependencies package="." />
+  <five:registerPackage package="." initialize=".initialize" />
 
   <!-- Grok the package to initialise schema interfaces and content classes -->
   <grok:grok package="." />
@@ -25,6 +26,9 @@
       description="Extension profile for wcc.content"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <adapter factory=".TranslatableFileImage.fileSchemaFactory"/>
+  <adapter factory=".TranslatableFileImage.imageSchemaFactory"/>
 
   <!-- -*- extra stuff goes here -*- -->
 
