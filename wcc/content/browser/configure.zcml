@@ -7,14 +7,11 @@
         directory="jbot"
         layer="..interfaces.IProductSpecific" />
 
-    <!-- The logo -->
     <browser:viewlet
-        name="plone.logo"
-        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        class=".viewlets.LogoViewlet"
+        name="wcc.footer_text"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        class=".viewlets.FooterTextViewlet"
         permission="zope2.View"
-        layer="..interfaces.IProductSpecific"
         />
-
 
 </configure>
