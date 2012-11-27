@@ -7,6 +7,8 @@ class FooterTextViewlet(ViewletBase):
     index = ViewPageTemplateFile('footer_text.pt')
 
     def value(self):
+        if not hasattr(self.context, 'getField'):
+            return ''
         field = self.context.getField('footer_text')
         if field:
             return field.get(self.context)
