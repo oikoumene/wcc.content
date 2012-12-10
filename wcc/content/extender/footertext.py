@@ -3,6 +3,7 @@ from Products.Archetypes.public import TextField
 from five import grok
 from archetypes.schemaextender.interfaces import ISchemaExtender
 from plone.app.collection.interfaces import ICollection
+from Products.ATContentTypes.interfaces.topic import IATTopic
 from Products.Archetypes.atapi import AnnotationStorage
 from Products.Archetypes.atapi import RichWidget
 from Products.ATContentTypes.configuration import zconf
@@ -10,6 +11,8 @@ from wcc.content import MessageFactory as _
 
 class ExtensionTextField(ExtensionField, TextField):
     pass
+
+
 
 class CollectionAdapter(grok.Adapter):
     grok.context(ICollection)
@@ -36,3 +39,7 @@ class CollectionAdapter(grok.Adapter):
 
     def getFields(self):
         return self.fields
+
+
+class TopicAdapter(CollectionAdapter):
+    grok.context(IATTopic)
