@@ -16,7 +16,7 @@ long_description = (
 
 setup(name='wcc.content',
       version=version,
-      description="",
+      description="Custom content for WCC main site.",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -29,8 +29,8 @@ setup(name='wcc.content',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='',
-      author='',
-      author_email='',
+      author='Izhar Firdaus',
+      author_email='izhar@inigo-tech.com',
       url='http://svn.plone.org/svn/collective/',
       license='gpl',
       packages=find_packages(),
