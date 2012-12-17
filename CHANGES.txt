@@ -4,7 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- add footer_text to IATTopic
 
 
 1.1 (2012-12-04)
